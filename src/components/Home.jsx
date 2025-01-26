@@ -58,21 +58,21 @@ const Home = () => {
     <div className='flex flex-col justify-center items-center'>
       <div className="flex flex-row justify-around gap-8 p-4">
         <input
-          className="rounded-md p-1 bg-zinc-100 text-black mt-2 w-[67%] pl-4 focus:outline-none focus:shadow-[0px_0px_10px_rgba(0,0,0,0.7)] shadow-violet-500"
+          className="w-32 md:w-72 lg:w-82 rounded-md p-1 bg-zinc-100 text-black mt-2 pl-4 focus:outline-none focus:shadow-[0px_0px_10px_rgba(0,0,0,0.7)] shadow-violet-500"
           type="text"
           placeholder="enter title here"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
 
-        <button className="rounded-xl bg-zinc-100  hover:shadow-[0px_0px_10px_rgba(0,0,0,0.7)] shadow-violet-500 hover:inset-ring-1 inset-ring-violet-500 text-black w-24 p-2 mt-2" onClick={createPaste}>
+        <button className=" md:w-32 lg:w-48 rounded-xl bg-zinc-100  hover:shadow-[0px_0px_10px_rgba(0,0,0,0.7)] shadow-violet-500 hover:inset-ring-1 inset-ring-violet-500 text-black p-2 mt-2" onClick={createPaste}>
           {pasteId ? "Update" : "Create"}
         </button>
       </div>
 
       <div className="mt-8">
         <textarea
-          className="rounded-xl bg-zinc-100 focus:outline-none focus:shadow-[0px_0px_40px_rgba(0,0,0,0.7)] shadow-violet-500 text-black p-4 mt-4 min-w-[500px]"
+          className="w-65 md:w-124 lg:w-150 rounded-xl bg-zinc-100 focus:outline-none focus:shadow-[0px_0px_40px_rgba(0,0,0,0.7)] shadow-violet-500 text-black p-4 mt-4"
           value={value}
           placeholder="enter paste here"
           onChange={(e) => setValue(e.target.value)}

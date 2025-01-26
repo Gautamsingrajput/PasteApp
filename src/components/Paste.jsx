@@ -33,7 +33,7 @@ const Paste = () => {
               <div className="flex flex-col bg-white m-2 rounded-lg px-8 py-4 shadow-[0px_0px_20px_rgba(0,0,0,0.7)] shadow-violet-500 text-black" key={paste?._id}>
                 <div className="ml-2 font-bold text-neutral-700">{paste.title}</div>
                 <div className="ml-2 text-neutral-600">{paste.content}</div>
-                <div className="flex flex-row place-content-evenly gap-4">
+                <div className="flex flex-row flex-wrap place-content-evenly gap-4">
 
 
                   <button className="rounded-md bg-lime-300 px-5 py-1 m-2 text-[15px] hover:inset-ring-1 hover:inset-ring-lime-500 hover:shadow-[0px_0px_10px_rgba(0,0,0,0.7)] hover:shadow-lime-300" >
